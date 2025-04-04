@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="three.r134.min.js"></script>
+    <script src="vanta.net.min.js"></script>
+</head>
+<body>
+    <div id="vanta-background"></div>
+    <!-- Side Menu -->
+    <div class="side-menu" id="sideMenu">
+        <div class="menu-content">
+            <a href="https://1drv.ms/w/s!AuCdfmauS4_PgeMOUG-SZ0PukMJcTw?e=5WhfQb" class="download-resume">Download Resume <i class="fas fa-download"></i></a>
+        </div>
+    </div>
+    <div class="menu-toggle" id="menuToggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="top-nav">
+        <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#volunteering">Volunteering</a></li>
+            <li class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="card-container animate-on-scroll">
+            <div class="description">
+                <h1>Hello, I'm Dedipya</h1>
+                <p class="animate-text">Ambitious 3rd-year CS student who thrives on challenges beyond her comfort zone. Passionate about problem-solving, critical thinking, and innovation. Eager to learn, adapt, and make an impact in the tech world.</p>
+                <a href="mailto:dedipya07@gmail.com" class="get-in-touch animate-button">Let's Talk!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Other Sections -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="chatbot.png" alt="Project 1">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/Dedipya07/AI-Powered-Chatbot" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://ai-powered-chatbot-nine.vercel.app/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>AI-Powered Chatbot</h3>
+                    <p>An intelligent chatbot leveraging AI to enhance user interactions and automate responses.</p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>OpenAI API</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="swiggy.webp" alt="Project 2">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/Dedipya07/Swiggy-data-analysis" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Swiggy Data Analysis</h3>
+                    <p>An in-depth analysis of Swiggy's dataset to uncover trends in restaurant ratings, pricing, and customer preferences, using data visualization and machine learning insights.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Jupyter Notebook</span>
+                    
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="stock.jpg" alt="Project 3">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Safe Trade: A Stock Recommendation System</h3>
+                    <p>AI-driven stock analysis tool providing data-backed investment insights.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>TensorFlow</span>
+                        <span>Keras</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 4 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="portfolio-img.png" alt="Project 4">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/Dedipya07/Portfolio" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://comforting-moonbeam-4902ec.netlify.app/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>My Portfolio</h3>
+                    <p>A dynamic, personalized website showcasing skills, projects, and achievements.</p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 5 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="digital-will.png" alt="Project 5">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/Dedipya07/digital-will-portal" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://digital-will-portal-rho.vercel.app/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Digital Will</h3>
+                    <p>A secure platform for creating and managing digital wills, ensuring seamless asset transfer.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>TypeScript</span>
+                        <span>tailwindcss</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Card 6 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="speech-text.webp" alt="Project 6">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Speech to Text Transcription</h3>
+                    <p>Collaborated with cross functional teams to Collect Telugu - Dialect data to build a Telugu LLM.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>OpenAI API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <!-- Technical Skills -->
+            <div class="skills-category">
+                <h3><i class="fas fa-code"></i> Technical Skills</h3>
+                <div class="skill-cards">
+                    <div class="skill-card">
+                        <i class="fab fa-html5"></i>
+                        <h4>HTML</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-css3-alt"></i>
+                        <h4>CSS</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-js"></i>
+                        <h4>JavaScript</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-figma"></i>
+                        <h4>UI/UX</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-python"></i>
+                        <h4>Python</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-react"></i>
+                        <h4>React</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-docker"></i>
+                        <h4>Docker</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-power-bi"></i>
+                        <h4>Power BI</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-bootstrap"></i>
+                        <h4>Bootstrap</h4>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <!-- Experience Card 1 -->
+            <div class="timeline-card">
+                <div class="timeline-content">
+                    <div class="timeline-date">2024 May - 2024 July</div>
+                    <h3>Intern - Team Lead</h3>
+                    <h4>Swecha, Telangana</h4>
+                    <ul>
+                        <li>Advanced AI Model Building</li>
+                        <li>Natural language Processing, Data scrapping, Transcription Automation.</li>
+                        <li>Lead and managed a team of 125 members.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Experience Card 2 -->
+            <div class="timeline-card">
+                <div class="timeline-content">
+                    <div class="timeline-date">2024 August - 2024 October</div>
+                    <h3>Intern - Scrum Master</h3>
+                    <h4>Swecha, Telangana</h4>
+                    <ul>
+                        <li>Collaborated with cross-functional teams to collect Telugu dialect data for an LLM.</li>
+                        <li>Gained expertise in NLP, linguistics, model training, and project management.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-grid">
+            <!-- Education Card 1 -->
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="education-content">
+                    <h3>B.Tech of Computer Science</h3>
+                    <h4>Sridevi Women's Engineering College</h4>
+                    <p class="education-date">2022 - 2026</p>
+                    <p>CGPA: 8.21</p>
+                    <div class="education-details">
+                        <span>AI & Machine Learning</span>
+                        <span>UI/UX Design</span>
+                        <span>Web Development</span>
+                        <span>Cloud Computing</span>
+                        <span>Database Management</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Card 2 -->
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="education-content">
+                    <h3>Intermediate</h3>
+                    <h4>Aakash Institute</h4>
+                    <p class="education-date">2020 - 2022</p>
+                    <p>Percentage: 93%</p>
+                    <div class="education-details">
+                        <span>Advanced problem-solving (Math, Science, CS)</span>
+                        <span>Logical reasoning & analytical thinking</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Card 3 -->
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="education-content">
+                    <h3>Higher Secondary</h3>
+                    <h4>Maharishi Vidya Mandir</h4>
+                    <p class="education-date">2009 - 2020</p>
+                    <p>91%</p>
+                    <div class="education-details">
+                        <span>Critical thinking & problem-solving</span>
+                        <span>Verbal and written communication</span>
+                        <span>Teamwork and collaboration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="volunteering">
+        <h2>Volunteering Work</h2>
+        <div class="volunteering-grid">
+            <!-- Volunteering Card 1 -->
+            <div class="volunteering-card">
+                <div class="volunteering-image">
+                    <img src="pawzz.png" alt="Volunteering 1">
+                    <div class="volunteering-overlay">
+                        <a href="https://www.pawzz.org/" class="volunteering-link">Learn More</a>
+                    </div>
+                </div>
+                <div class="volunteering-content">
+                    <h3>Pawzzitive Welfare Foundation</h3>
+                    <p class="volunteering-date">2023</p>
+                    <p>Volunteered for an NGO dedicated to the welfare of stray dogs and cats, leading crowdfunding initiatives and raising awareness to support rescue, medical aid, and adoption efforts.</p>
+                    <div class="volunteering-tags">
+                        <span>Volunteering</span>
+                        <span>NGO</span>
+                        <span>Animal Welfare</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Volunteering Card 2 -->
+            <div class="volunteering-card">
+                <div class="volunteering-image">
+                    <img src="swecha.jpeg" alt="Volunteering 2">
+                    <div class="volunteering-overlay">
+                        <a href="https://swecha.org/" class="volunteering-link">Learn More</a>
+                    </div>
+                </div>
+                <div class="volunteering-content">
+                    <h3>Free Medical Camp</h3>
+                    <p class="volunteering-date">2024 - Present</p>
+                    <p>Managed patient registrations, healthcare services, and awareness programs for underprivileged communities.</p>
+                    <div class="volunteering-tags">
+                        <span>Volunteering</span>
+                        <span>Medical</span>
+                        <span>Healthcare</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/y-dedipya" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Dedipya07" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/dedipyaaaa" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- Floating Home Button -->
+    <a href="#home" class="floating-home">
+        <i class="fas fa-home"></i>
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+    VANTA.NET({
+        el: "#vanta-background",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x6b46c1,
+        backgroundColor: 0x000000,
+        maxDistance: 19.00,
+        spacing: 17.00
+    });
+    </script>
+</body>
+</html>
